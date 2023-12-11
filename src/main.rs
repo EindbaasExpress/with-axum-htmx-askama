@@ -1,6 +1,4 @@
-use std::sync::Arc;
 
-use anyhow::Context;
 use askama::Template;
 use axum::{
     http::StatusCode,
@@ -9,6 +7,7 @@ use axum::{
     Router, extract::State, Form,
 };
 use serde::Deserialize;
+use std::sync::Arc;
 use tokio::sync::Mutex;
 use tower_http::services::ServeDir;
 use tracing::info;
